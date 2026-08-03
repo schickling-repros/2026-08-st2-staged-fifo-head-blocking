@@ -1,0 +1,128 @@
+{
+  "nodes": {
+    "flake-utils": {
+      "inputs": {
+        "systems": "systems"
+      },
+      "locked": {
+        "lastModified": 1731533236,
+        "narHash": "sha256-l0KFg5HjrsfsO/JpG+r7fRrqm12kzFHyUHqHCVpMMbI=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "11707dc2f618dd54ca8739b309ec4fc024de578b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1785571196,
+        "narHash": "sha256-KoTsyMQqnXQZq8deCEnu4QkyldkwH/bpMMhUcfMdGIw=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "148bab9c1c3c53136ecb44a6ea356a0ed5b39b06",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "pty": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1785518728,
+        "narHash": "sha256-NXTWG/SIctaloeAxJP9GI+8ea2MWFs32bYlgT6WBpC4=",
+        "owner": "compoundingtech",
+        "repo": "pty",
+        "rev": "504ac7332895fe1fa3767b530dcd99f091f56cda",
+        "type": "github"
+      },
+      "original": {
+        "owner": "compoundingtech",
+        "repo": "pty",
+        "rev": "504ac7332895fe1fa3767b530dcd99f091f56cda",
+        "type": "github"
+      }
+    },
+    "pty_2": {
+      "inputs": {
+        "nixpkgs": [
+          "st2",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1785518728,
+        "narHash": "sha256-NXTWG/SIctaloeAxJP9GI+8ea2MWFs32bYlgT6WBpC4=",
+        "owner": "compoundingtech",
+        "repo": "pty",
+        "rev": "504ac7332895fe1fa3767b530dcd99f091f56cda",
+        "type": "github"
+      },
+      "original": {
+        "owner": "compoundingtech",
+        "repo": "pty",
+        "rev": "504ac7332895fe1fa3767b530dcd99f091f56cda",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "nixpkgs": "nixpkgs",
+        "pty": "pty",
+        "st2": "st2"
+      }
+    },
+    "st2": {
+      "inputs": {
+        "flake-utils": "flake-utils",
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "pty": "pty_2"
+      },
+      "locked": {
+        "lastModified": 1785594716,
+        "narHash": "sha256-maumIHN3+XJlQF0N8yR4DDD4d0dOnfueUuSo02LOdi0=",
+        "owner": "compoundingtech",
+        "repo": "st2",
+        "rev": "509ffb4cdcc1805a1ccd566e87b5d373bb4c47d4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "compoundingtech",
+        "repo": "st2",
+        "rev": "509ffb4cdcc1805a1ccd566e87b5d373bb4c47d4",
+        "type": "github"
+      }
+    },
+    "systems": {
+      "locked": {
+        "lastModified": 1681028828,
+        "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
+        "owner": "nix-systems",
+        "repo": "default",
+        "rev": "da67096a3b9bf56a91d16901293e51ba5b49a27e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-systems",
+        "repo": "default",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
